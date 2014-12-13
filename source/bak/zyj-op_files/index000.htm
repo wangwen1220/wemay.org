@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+
+<title>评价详情</title>
+<meta content="评价详情" name="keywords">
+<meta content="评价详情" name="description">
+<link rel="stylesheet" type="text/css" href="www00000.css">
+<script type="text/javascript" src="jquery-2.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {  	   
+	   $("#tj").click(function(){
+		      $("#lysave").hide();$("#ts").show();
+		      $.post("booksave.asp", $("#lysave").serialize(),function(data,textStatus){
+                      alert(data);
+                      $("#lysave").show();$("#ts").hide();
+                      if(data=="留言成功"){
+                      $("#lysave")[0].reset();
+                      $("#yzt").attr("src","checkcode.asp?t="+new Date().getTime())
+                      }
+                      if(data=="验证码不正确"){
+                      $("#yzt").attr("src","checkcode.asp?t="+new Date().getTime())
+                      } 
+
+					}
+			);
+	   })
+	    
+	})
+
+</script>
+</head>
+<body>
+</br>
+<div id="book">
+<div id="top">评价详情</div>
+<div class="cyleft1">
+<div class="rbt1"><span style="float:right;padding-right:10px;">未审核留言：<b style="color:red;">43条</b></span> → 留言列表</div>   
+</div>
+<div class="cyleft2">
+<ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>今天刚试过了，老妈超满意，噪音小，一斤花生榨出了210G，也就是4.2两的油，花生渣很香，自己家的安全油，吃着放心呀。<br><span class="lysx">昵称：孙茜 </span></li>
+</ul><ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>榨了一斤花生，出了3两多油，浑浊待澄清，现在再看买到的鲁花花生油清亮的有点不正常了，香得也太浓了，我自己榨的花生油就是澄清之后估计也没有那么好看。这东西让我放心，赞一个。<br><span class="lysx">昵称： 侯跃佳 </span></li>
+</ul><ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>大颗粒的花生，出油好多了，烘了3锅花生，出油越来越好，花生不能烘太熟，一般6，7分熟就可以了，以后都吃自己榨的油啦，很棒的机器<br><span class="lysx">昵称：王威 </span></li>
+</ul><ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>非常好的榨油机，外观一看就是正品，有了这个从此可以过上无忧的日子了，不再担心不小心吃到地沟油或者其他毒油了，今天试了下，操作简单，炸出的花生油很好，就是要榨油之前炒下，健康比什么都重要<br><span class="lysx">昵称：赵文海  </span></li>
+</ul><ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>棒极了，小巧、易操作、干净、方便收纳。今天一拿到货就榨了芝麻和花生，油稍混，想必沉淀一下会很好。改天再榨黄豆看看，如成功，就非常完美了。<br><span class="lysx">昵称：顏倬鑫 </span></li>
+</ul><ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>真的是很好的机器。今天刚收到，买了1斤2两花生试榨，花生先用微波炉加热4分钟，能轻易搓掉花生皮就行，榨了50分钟，得了差不多6两油呢，出油率真的是高。花生的生熟直接影响出油率，各位亲要注意喔！第一次试榨非常成功，我和老公非常满意！现在还是满屋子的花生香味，以后再也不用担心吃到地沟油了！<br><span class="lysx">昵称：牟莹 </span></li>
+</ul><ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>榨的花生油倍儿香，比买的香多了，强迫消费了，又去买了一些葵花籽和油菜籽，等着回来接着榨。<br><span class="lysx">昵称：母翠玲 </span></li>
+</ul><ul class="booklb"><li class="lyzt"></li>
+<li class="lynr"><label class="lybt">留言内容：</label><br>收到后仔细检查了，包装完好，配件齐全，对照说明书很快就安装好了，很简单，买了芝麻怕有灰尘，想洗了一遍，等不及了就直接用花生了，按说明在炒锅里先炒出香味，然后加料，启动后加热大约5、6分钟，听到电机转就过去盯着看，第一次自己榨油新鲜哪，看着油一滴滴滴下，渣料一点点出来，抓起一些尝了尝，特好吃，低脂高蛋白，呵呵，大约6-7两的料榨了二十分钟左右吧，搞定OK,油杯里是油和酱的混合液，按说明静置，过了一晚上看油酱分得很清楚，香气十足，美呵！以后必须的常用了<br><span class="lysx">昵称：宁其珍 </span></li>
+</ul>
+<div class="clear"></div>
+<div class="xtfy">首页 上一页 <a href="http://bailixiu.kingqiangbo.cn/zhayouji/liuyan/index.asp?page=2">下一页</a> <a href="http://bailixiu.kingqiangbo.cn/zhayouji/liuyan/index.asp?page=258">尾页</a> 页次：1/258页 共2058条记录 8条/页 转第 <select name="select" onchange="javascript:window.location.href=this.options[this.selectedIndex].value"><option selected value="index.asp?page=1">1</option><option value="index.asp?page=2">2</option><option value="index.asp?page=3">3</option><option value="index.asp?page=4">4</option><option value="index.asp?page=5">5</option><option value="index.asp?page=6">6</option><option value="index.asp?page=7">7</option><option value="index.asp?page=8">8</option><option value="index.asp?page=9">9</option><option value="index.asp?page=10">10</option><option value="index.asp?page=11">11</option><option value="index.asp?page=12">12</option><option value="index.asp?page=13">13</option><option value="index.asp?page=14">14</option><option value="index.asp?page=15">15</option><option value="index.asp?page=16">16</option><option value="index.asp?page=17">17</option><option value="index.asp?page=18">18</option><option value="index.asp?page=19">19</option><option value="index.asp?page=20">20</option><option value="index.asp?page=21">21</option><option value="index.asp?page=22">22</option><option value="index.asp?page=23">23</option><option value="index.asp?page=24">24</option><option value="index.asp?page=25">25</option><option value="index.asp?page=26">26</option><option value="index.asp?page=27">27</option><option value="index.asp?page=28">28</option><option value="index.asp?page=29">29</option><option value="index.asp?page=30">30</option><option value="index.asp?page=31">31</option><option value="index.asp?page=32">32</option><option value="index.asp?page=33">33</option><option value="index.asp?page=34">34</option><option value="index.asp?page=35">35</option><option value="index.asp?page=36">36</option><option value="index.asp?page=37">37</option><option value="index.asp?page=38">38</option><option value="index.asp?page=39">39</option><option value="index.asp?page=40">40</option><option value="index.asp?page=41">41</option><option value="index.asp?page=42">42</option><option value="index.asp?page=43">43</option><option value="index.asp?page=44">44</option><option value="index.asp?page=45">45</option><option value="index.asp?page=46">46</option><option value="index.asp?page=47">47</option><option value="index.asp?page=48">48</option><option value="index.asp?page=49">49</option><option value="index.asp?page=50">50</option><option value="index.asp?page=51">51</option><option value="index.asp?page=52">52</option><option value="index.asp?page=53">53</option><option value="index.asp?page=54">54</option><option value="index.asp?page=55">55</option><option value="index.asp?page=56">56</option><option value="index.asp?page=57">57</option><option value="index.asp?page=58">58</option><option value="index.asp?page=59">59</option><option value="index.asp?page=60">60</option><option value="index.asp?page=61">61</option><option value="index.asp?page=62">62</option><option value="index.asp?page=63">63</option><option value="index.asp?page=64">64</option><option value="index.asp?page=65">65</option><option value="index.asp?page=66">66</option><option value="index.asp?page=67">67</option><option value="index.asp?page=68">68</option><option value="index.asp?page=69">69</option><option value="index.asp?page=70">70</option><option value="index.asp?page=71">71</option><option value="index.asp?page=72">72</option><option value="index.asp?page=73">73</option><option value="index.asp?page=74">74</option><option value="index.asp?page=75">75</option><option value="index.asp?page=76">76</option><option value="index.asp?page=77">77</option><option value="index.asp?page=78">78</option><option value="index.asp?page=79">79</option><option value="index.asp?page=80">80</option><option value="index.asp?page=81">81</option><option value="index.asp?page=82">82</option><option value="index.asp?page=83">83</option><option value="index.asp?page=84">84</option><option value="index.asp?page=85">85</option><option value="index.asp?page=86">86</option><option value="index.asp?page=87">87</option><option value="index.asp?page=88">88</option><option value="index.asp?page=89">89</option><option value="index.asp?page=90">90</option><option value="index.asp?page=91">91</option><option value="index.asp?page=92">92</option><option value="index.asp?page=93">93</option><option value="index.asp?page=94">94</option><option value="index.asp?page=95">95</option><option value="index.asp?page=96">96</option><option value="index.asp?page=97">97</option><option value="index.asp?page=98">98</option><option value="index.asp?page=99">99</option><option value="index.asp?page=100">100</option><option value="index.asp?page=101">101</option><option value="index.asp?page=102">102</option><option value="index.asp?page=103">103</option><option value="index.asp?page=104">104</option><option value="index.asp?page=105">105</option><option value="index.asp?page=106">106</option><option value="index.asp?page=107">107</option><option value="index.asp?page=108">108</option><option value="index.asp?page=109">109</option><option value="index.asp?page=110">110</option><option value="index.asp?page=111">111</option><option value="index.asp?page=112">112</option><option value="index.asp?page=113">113</option><option value="index.asp?page=114">114</option><option value="index.asp?page=115">115</option><option value="index.asp?page=116">116</option><option value="index.asp?page=117">117</option><option value="index.asp?page=118">118</option><option value="index.asp?page=119">119</option><option value="index.asp?page=120">120</option><option value="index.asp?page=121">121</option><option value="index.asp?page=122">122</option><option value="index.asp?page=123">123</option><option value="index.asp?page=124">124</option><option value="index.asp?page=125">125</option><option value="index.asp?page=126">126</option><option value="index.asp?page=127">127</option><option value="index.asp?page=128">128</option><option value="index.asp?page=129">129</option><option value="index.asp?page=130">130</option><option value="index.asp?page=131">131</option><option value="index.asp?page=132">132</option><option value="index.asp?page=133">133</option><option value="index.asp?page=134">134</option><option value="index.asp?page=135">135</option><option value="index.asp?page=136">136</option><option value="index.asp?page=137">137</option><option value="index.asp?page=138">138</option><option value="index.asp?page=139">139</option><option value="index.asp?page=140">140</option><option value="index.asp?page=141">141</option><option value="index.asp?page=142">142</option><option value="index.asp?page=143">143</option><option value="index.asp?page=144">144</option><option value="index.asp?page=145">145</option><option value="index.asp?page=146">146</option><option value="index.asp?page=147">147</option><option value="index.asp?page=148">148</option><option value="index.asp?page=149">149</option><option value="index.asp?page=150">150</option><option value="index.asp?page=151">151</option><option value="index.asp?page=152">152</option><option value="index.asp?page=153">153</option><option value="index.asp?page=154">154</option><option value="index.asp?page=155">155</option><option value="index.asp?page=156">156</option><option value="index.asp?page=157">157</option><option value="index.asp?page=158">158</option><option value="index.asp?page=159">159</option><option value="index.asp?page=160">160</option><option value="index.asp?page=161">161</option><option value="index.asp?page=162">162</option><option value="index.asp?page=163">163</option><option value="index.asp?page=164">164</option><option value="index.asp?page=165">165</option><option value="index.asp?page=166">166</option><option value="index.asp?page=167">167</option><option value="index.asp?page=168">168</option><option value="index.asp?page=169">169</option><option value="index.asp?page=170">170</option><option value="index.asp?page=171">171</option><option value="index.asp?page=172">172</option><option value="index.asp?page=173">173</option><option value="index.asp?page=174">174</option><option value="index.asp?page=175">175</option><option value="index.asp?page=176">176</option><option value="index.asp?page=177">177</option><option value="index.asp?page=178">178</option><option value="index.asp?page=179">179</option><option value="index.asp?page=180">180</option><option value="index.asp?page=181">181</option><option value="index.asp?page=182">182</option><option value="index.asp?page=183">183</option><option value="index.asp?page=184">184</option><option value="index.asp?page=185">185</option><option value="index.asp?page=186">186</option><option value="index.asp?page=187">187</option><option value="index.asp?page=188">188</option><option value="index.asp?page=189">189</option><option value="index.asp?page=190">190</option><option value="index.asp?page=191">191</option><option value="index.asp?page=192">192</option><option value="index.asp?page=193">193</option><option value="index.asp?page=194">194</option><option value="index.asp?page=195">195</option><option value="index.asp?page=196">196</option><option value="index.asp?page=197">197</option><option value="index.asp?page=198">198</option><option value="index.asp?page=199">199</option><option value="index.asp?page=200">200</option><option value="index.asp?page=201">201</option><option value="index.asp?page=202">202</option><option value="index.asp?page=203">203</option><option value="index.asp?page=204">204</option><option value="index.asp?page=205">205</option><option value="index.asp?page=206">206</option><option value="index.asp?page=207">207</option><option value="index.asp?page=208">208</option><option value="index.asp?page=209">209</option><option value="index.asp?page=210">210</option><option value="index.asp?page=211">211</option><option value="index.asp?page=212">212</option><option value="index.asp?page=213">213</option><option value="index.asp?page=214">214</option><option value="index.asp?page=215">215</option><option value="index.asp?page=216">216</option><option value="index.asp?page=217">217</option><option value="index.asp?page=218">218</option><option value="index.asp?page=219">219</option><option value="index.asp?page=220">220</option><option value="index.asp?page=221">221</option><option value="index.asp?page=222">222</option><option value="index.asp?page=223">223</option><option value="index.asp?page=224">224</option><option value="index.asp?page=225">225</option><option value="index.asp?page=226">226</option><option value="index.asp?page=227">227</option><option value="index.asp?page=228">228</option><option value="index.asp?page=229">229</option><option value="index.asp?page=230">230</option><option value="index.asp?page=231">231</option><option value="index.asp?page=232">232</option><option value="index.asp?page=233">233</option><option value="index.asp?page=234">234</option><option value="index.asp?page=235">235</option><option value="index.asp?page=236">236</option><option value="index.asp?page=237">237</option><option value="index.asp?page=238">238</option><option value="index.asp?page=239">239</option><option value="index.asp?page=240">240</option><option value="index.asp?page=241">241</option><option value="index.asp?page=242">242</option><option value="index.asp?page=243">243</option><option value="index.asp?page=244">244</option><option value="index.asp?page=245">245</option><option value="index.asp?page=246">246</option><option value="index.asp?page=247">247</option><option value="index.asp?page=248">248</option><option value="index.asp?page=249">249</option><option value="index.asp?page=250">250</option><option value="index.asp?page=251">251</option><option value="index.asp?page=252">252</option><option value="index.asp?page=253">253</option><option value="index.asp?page=254">254</option><option value="index.asp?page=255">255</option><option value="index.asp?page=256">256</option><option value="index.asp?page=257">257</option><option value="index.asp?page=258">258</option></select> 页</div>
+<div class="qxly">留下您的问题及使用感受</div>
+<div id="ts" style="display:none;text-align:center;color:red;font-size:14px">留言提交处理中，请稍后！</div>
+<form id="lysave">
+<ol class="lylb">
+
+<li>您的昵称：<input class="bd" name="name" type="text"> *</li>
+
+<li><span>留言内容：</span><textarea class="bd" cols="80" name="content" rows="5"></textarea></li>
+<li>验 证 码：<input class="wenbenkuang" type="text" name="code" maxlength="4" size="5"> <img id="yzt" src="checkcod.bmp"></li>
+<li><input style="margin-left:60px" name="Submit1" id="tj" type="button" value="提交"> <input type="reset" value="重置"></li>
+</ol>
+</form>
+</div>
+<div class="cyleft3"></div>
+</div>
+</br>
+</body>
+</html>
+
+<!-- This document saved from http://bailixiu.kingqiangbo.cn/zhayouji/liuyan/index.asp -->

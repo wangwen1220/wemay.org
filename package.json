@@ -1,0 +1,15 @@
+{
+  "name": "zhayouji",
+  "title": "榨油机",
+  "version": "0.1.0",
+  "author": "Steven <wangwen1220@gmail.com>",
+  "description": "zhayouji web site",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*"
+  }
+}
